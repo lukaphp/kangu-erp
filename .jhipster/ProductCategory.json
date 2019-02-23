@@ -1,0 +1,42 @@
+{
+    "name": "ProductCategory",
+    "fields": [
+        {
+            "fieldName": "categoryCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "productCategory",
+            "otherEntityName": "productCategory",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "productCategory",
+            "otherEntityName": "productCategory",
+            "otherEntityRelationshipName": "productCategory"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "productCategory",
+            "otherEntityName": "product",
+            "otherEntityRelationshipName": "productCategory"
+        }
+    ],
+    "changelogDate": "20190223170403",
+    "entityTableName": "product_category",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

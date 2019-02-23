@@ -1,0 +1,38 @@
+{
+    "name": "Product",
+    "fields": [
+        {
+            "fieldName": "productCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productBarCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descriptionLabel",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "productCategory",
+            "otherEntityName": "productCategory",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190223170404",
+    "entityTableName": "product",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

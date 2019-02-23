@@ -1,0 +1,30 @@
+{
+    "name": "WarehouseCause",
+    "fields": [
+        {
+            "fieldName": "warehouseCauseCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "productCategory",
+            "otherEntityName": "warehouseCauseDetail",
+            "otherEntityRelationshipName": "warehouseCause"
+        }
+    ],
+    "changelogDate": "20190223170405",
+    "entityTableName": "warehouse_cause",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
