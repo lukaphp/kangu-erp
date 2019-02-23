@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "KanguErp",
+    "packageName": "it.computerproject.it.kangu.erp",
+    "packageFolder": "it/computerproject/it/kangu/erp",
+    "serverPort": 8080,
+    "serviceDiscoveryType": "eureka",
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": "true",
+    "messageBroker": "kafka",
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "it",
+    "languages": [
+      "en",
+      "fr",
+      "it"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.1",
+    "jwtSecretKey": "ODkyMWYwNDJkMGYyMDZmNmFhZDZiYTc3ZmM0ZDg3ZmFlZWFhZjZhZTZmNDBlYmM5NzQxNzRkZjA0NjY4YTNmMTM3M2JmZWM2NWRlOGU3ZjQzN2Y1MDJmNDVkMDk5NjQ2YTgxZTkwNmFlMTlhOTYxMjYwMmUzN2E5MjQ4MDE0ZmY=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "lukaphp",
+  "repository-name": "kangu-erp"
+}
