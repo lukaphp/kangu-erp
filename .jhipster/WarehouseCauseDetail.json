@@ -1,0 +1,55 @@
+{
+    "name": "WarehouseCauseDetail",
+    "fields": [
+        {
+            "fieldName": "warecausDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "warehouseCauseType",
+            "fieldType": "WarehouseCauseType",
+            "fieldValues": "IN_STOCK,OUT_STOCK"
+        },
+        {
+            "fieldName": "stockLoad",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "stockValLoad",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "stockDump",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "stockValDump",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "stockOrder",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "stockReserved",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "warehouseCause",
+            "otherEntityName": "warehouseCause",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190223170406",
+    "entityTableName": "warehouse_cause_detail",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

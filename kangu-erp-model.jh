@@ -16,8 +16,7 @@ relationship OneToMany {
 
 entity ProductCategory {
 	categoryCode String,
-    description String,
-    productCategory ProductCategory
+    description String
 }
 
 relationship OneToMany {
@@ -28,7 +27,6 @@ relationship OneToMany {
 entity Product {
 	productCode String,
     productBarCode String,
-    productCategory ProductCategory,
     description String,
 	descriptionLabel String
 }
@@ -44,7 +42,6 @@ entity WarehouseCause {
 }
 
 entity WarehouseCauseDetail {
-	warehouseCause WarehouseCause,
     warecausDesc String,
     warehouseCauseType WarehouseCauseType
     stockLoad Integer,
