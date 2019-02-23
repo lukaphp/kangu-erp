@@ -1,5 +1,5 @@
-entity Product {
 
+entity Product {
 	productCode String,
     productBarCode String,
     productCategory ProductCategory,
@@ -13,15 +13,27 @@ relationship OneToMany {
 	  
 }
 
+
 entity ProductCategory {
 	categoryCode String,
     description String,
     productCategory ProductCategory
 }
+
 relationship OneToMany {
   ProductCategory{productCategory} to ProductCategory,
 }
 
+
+entity Product {
+	productCode String,
+    productBarCode String,
+    productCategory ProductCategory,
+    description String,
+	descriptionLabel String
+}
+
+ 
 enum WarehouseCauseType {
 	IN_STOCK, OUT_STOCK
 }
@@ -42,9 +54,26 @@ entity WarehouseCauseDetail {
     stockOrder Integer,
     stockReserved Integer
 }
+
 relationship OneToMany {
   WarehouseCause{productCategory} to WarehouseCauseDetail,
 }
+
+
+
+relationship OneToMany {
+  ProductCategory{productCategory} to ProductCategory,
+}
+
+relationship OneToMany {
+  WarehouseCause{productCategory} to WarehouseCauseDetail,
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	ProductCategory{productCategory} to Product,
+	  
+}
+
 
 
 
