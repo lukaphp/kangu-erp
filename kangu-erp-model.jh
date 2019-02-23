@@ -1,0 +1,50 @@
+
+entity ProductCategory {
+	categoryCode String,
+    description String,
+}
+
+entity Product {
+	productCode String,
+    productBarCode String,
+    description String,
+	descriptionLabel String
+}
+
+ 
+enum WarehouseCauseType {
+	IN_STOCK, OUT_STOCK
+}
+
+entity WarehouseCause {
+	warehouseCauseCode String,
+    description String
+}
+
+entity WarehouseCauseDetail {
+    warecausDesc String,
+    warehouseCauseType WarehouseCauseType
+    stockLoad Integer,
+    stockValLoad Integer,
+    stockDump Integer,
+    stockValDump Integer,
+    stockOrder Integer,
+    stockReserved Integer
+}
+
+
+relationship OneToMany {
+  ProductCategory{productCategory} to ProductCategory,
+}
+
+relationship OneToMany {
+  WarehouseCause{productCategory} to WarehouseCauseDetail,
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	ProductCategory{productCategory} to Product,
+	  
+}
+
+
+
