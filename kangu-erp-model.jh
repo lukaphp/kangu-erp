@@ -1,7 +1,7 @@
 
 entity ProductCategory {
 	categoryCode String,
-    description String,
+    description String
 }
 
 entity Product {
